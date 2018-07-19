@@ -5,4 +5,5 @@
     <string name="entrar">entrar</string>
     <string name="criar_conta">criar conta</string>
     <string name="title_activity_lista">ListaActivity</string>
+    <string name="erro_entrar">usuario nao existe</string>
 </resources>
