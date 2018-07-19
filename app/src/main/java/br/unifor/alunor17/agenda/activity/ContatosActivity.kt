@@ -1,13 +1,13 @@
-package br.unifor.alunor17.agenda
+package br.unifor.alunor17.agenda.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import br.unifor.alunor17.agenda.R
 
-class InicialActivity : AppCompatActivity() {
+class ContatosActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inicial)
+        setContentView(R.layout.activity_contatos)
     }
-
 }

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InicialActivity"
-    android:background="#c6d8e2">
+    tools:context=".activity.InicialActivity"
+    android:background="#c4c6c7">
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -37,7 +37,9 @@
           android:layout_marginTop="50dp"
           android:layout_width="150dp"
           android:layout_height="wrap_content"
-          android:text="@string/entrar"/>
+          android:text="@string/entrar"
+          android:backgroundTint="#66000000"
+          android:textColor="#c4c6c7"/>
 
       <android.support.v7.widget.AppCompatTextView
           android:layout_width="wrap_content"
@@ -48,7 +50,9 @@
           android:id="@+id/criar_conta"
           android:layout_width="150dp"
           android:layout_height="wrap_content"
-          android:text="@string/criar_conta"/>
+          android:text="@string/criar_conta"
+          android:backgroundTint="#66000000"
+          android:textColor="#c4c6c7"/>
 
 
 
