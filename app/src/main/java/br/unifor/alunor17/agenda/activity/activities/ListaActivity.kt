@@ -1,4 +1,4 @@
-package br.unifor.alunor17.agenda.activity
+package br.unifor.alunor17.agenda.activity.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

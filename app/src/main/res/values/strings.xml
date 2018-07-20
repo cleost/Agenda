@@ -6,4 +6,6 @@
     <string name="criar_conta">criar conta</string>
     <string name="title_activity_lista">ListaActivity</string>
     <string name="erro_entrar">usuario nao existe</string>
+    <string name="senha_confirmacao">Senha novamente</string>
+    <string name="erro_criar_conta">Não foi possivel criar conta</string>
 </resources>

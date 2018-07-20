@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.InicialActivity"
-    android:background="#c4c6c7"
+    tools:context=".activity.activities.InicialActivity"
+    android:background="#fb842a4e"
     android:id="@+id/inicial">
 
   <LinearLayout
@@ -26,7 +26,6 @@
       <EditText
           android:id="@+id/senha"
           android:layout_marginTop="30dp"
-
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:hint="@string/senha"
@@ -55,7 +54,6 @@
           android:backgroundTint="#66000000"
           android:textColor="#c4c6c7"/>
 
-
-
   </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

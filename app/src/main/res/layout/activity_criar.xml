@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.unifor.alunor17.agenda.activity.activities.CriarActivity"
+    android:background="#fb842a4e"
+    android:id="@+id/criar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <EditText
+            android:id="@+id/criar_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/e_mail"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/criar_senha"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha"
+            android:textAlignment="center"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:id="@+id/criar_senha_confirmacao"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha_confirmacao"
+            android:textAlignment="center"
+            android:inputType="numberPassword"/>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/criar_usuario"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/criar_conta"
+            android:backgroundTint="#66000000"
+            android:textColor="#c4c6c7"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

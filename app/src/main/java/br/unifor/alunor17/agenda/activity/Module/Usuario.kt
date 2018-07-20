@@ -6,5 +6,6 @@ open class Usuario {
 
     var email:String = ""
     @SerializedName("password") var senha:String = ""
+    @SerializedName("password_confirmation") var senha_confirmacao:String? = ""
 
 }

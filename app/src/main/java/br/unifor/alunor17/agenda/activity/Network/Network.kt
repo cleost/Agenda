@@ -10,11 +10,11 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object Network {
 
-    val AgendaAPI by lazy{
+    val AgendaAPI by lazy {
         configuraRetrofit().create(AgendaAPI::class.java)
     }
 
-    private fun configuraRetrofit():Retrofit{
+    private fun configuraRetrofit(): Retrofit {
         return Retrofit.Builder()
                 .baseUrl("https://api-agenda-unifor.herokuapp.com")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -22,18 +22,29 @@ object Network {
                 .build()
     }
 
-    fun entrar(email:String, senha:String, onSuccess: (user: Usuario) -> Unit, onError: () -> Unit ){
-                    AgendaAPI.entrar(email, senha)
-                             .subscribeOn(Schedulers.io())
-                             .observeOn(AndroidSchedulers.mainThread())
-                             .subscribe({
-                                         user -> user?.let { onSuccess(it) }
-                                     }
-                                     ,{
-                                        onError()
-                                     })
+    fun entrar(usuario: Usuario, onSuccess: (user: Usuario) -> Unit, onError: () -> Unit) {
+        AgendaAPI.entrar(usuario)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({ user ->
+                    user?.let { onSuccess(it) }
+                }
+                        , {
+                    onError()
+                })
     }
 
+    fun criarConta(usuario: Usuario, onSuccess: (usuario: Usuario) -> Unit, onError: () -> Unit) {
+        AgendaAPI.criarConta(usuario)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe({ usuario ->
+                    usuario?.let { onSuccess(it) }
+                }
+                        , {
+                    onError()
+                })
+    }
 
 
 }

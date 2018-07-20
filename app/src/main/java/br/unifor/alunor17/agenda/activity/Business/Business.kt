@@ -8,12 +8,22 @@ import br.unifor.alunor17.agenda.activity.Network.Network
 
 object Business {
 
-     fun entrar(email:String, senha:String, onSucess: () -> Unit, onError: (message:Int) -> Unit){
 
-         Network.entrar(email, senha, {
-          it
-         } ,{
-             onError(R.string.erro_entrar)
-         })
-     }
+
+    fun entrar(usuario: Usuario, onSucess: () -> Unit, onError: (message: Int) -> Unit) {
+
+        Network.entrar(usuario, {
+            it
+        }, {
+            onError(R.string.erro_entrar)
+        })
+    }
+
+    fun criarConta(usuario: Usuario, onSucess: () -> Unit, onError: (message: Int) -> Unit) {
+        Network.criarConta(usuario, {
+            it
+        }, {
+            onError(R.string.erro_criar_conta)
+        })
+    }
 }
